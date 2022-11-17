@@ -5,9 +5,7 @@
   "main": "index.js",
   "homepage": "https://AlexKarneta.github.io/ZMrepo",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
