@@ -1,0 +1,68 @@
+body {
+  background: url("/src/assets/pexels-fabian-reitmeier-707915.jpg");
+  display: flex;
+  justify-content: center;
+}
+.container {
+  border: 1px solid rgba(248, 238, 238);
+  transform: skew(-30deg);
+  ::placeholder {
+    transform: skew(30deg);
+  }
+}
+
+.btn-order {
+  background-color: rgb(236, 31, 31);
+  border: none;
+  span {
+    display: block;
+    transform: skew(30deg);
+  }
+}
+.btn-order :hover {
+  scale: 1.05;
+}
+.input-order {
+  background: rgba(250, 249, 249, 0.6);
+  border: none;
+  transform: none;
+  &:focus {
+    transform: skew(30deg);
+    outline: none;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    border: 1px solid rgba(248, 238, 238);
+    transform: none;
+    ::placeholder {
+      transform: none;
+    }
+  }
+  .input-order {
+    &:focus {
+      transform: none;
+    }
+  }
+  .btn-order {
+    span {
+      transform: none;
+    }
+  }
+}
+.chips {
+  color: rgb(36, 224, 15);
+}
+.chips-field {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
